@@ -1,0 +1,46 @@
+{
+  "name": "intercom-cli",
+  "version": "0.1.0",
+  "description": "Agent-optimized CLI for the Intercom API — manage conversations, contacts, and tickets from your terminal or AI agent",
+  "bin": {
+    "intercom": "./dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "intercom",
+    "cli",
+    "ai-agent",
+    "mcp",
+    "customer-support",
+    "helpdesk",
+    "automation"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.0",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0",
+    "dayjs": "^1.11.13",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.10",
+    "@types/node": "^20.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
